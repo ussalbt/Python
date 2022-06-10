@@ -3,8 +3,6 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 st.title("CAR PRICE FORECAST")
-img = Image.open("indir (2).jpg")
-st.image(img, caption="Cars", width=400)
 st.write("# dataframes")
 df = pd.read_csv("final_scout_not_dummy.csv")
 df = df[["make_model","km","Gears","age","hp_kW","price"]]
